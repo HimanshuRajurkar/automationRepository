@@ -10,13 +10,10 @@ public class SwitchTo {
 		// TODO Auto-generated method stub
          WebDriver driver = new ChromeDriver();
          driver.manage().window().maximize();
-         driver.get("https://www.google.com");
-         Thread.sleep(2000);
+         driver.get("https://www.selenium.dev/");
          
-         // Switch the control to activeElement
-         driver.switchTo().activeElement().sendKeys("selenium",Keys.ENTER);
-         Thread.sleep(2000);
-         driver.close();
+         
+       
        
          
 	}
