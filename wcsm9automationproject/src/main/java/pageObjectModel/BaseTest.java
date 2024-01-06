@@ -12,7 +12,7 @@ import keyworddrivenframework.FLib;
 
 public class BaseTest extends pageObjectModel.FLib implements IautoConstant {
 
-	static WebDriver driver;
+	 static WebDriver driver;
 	
 
 	public void setup() throws IOException {

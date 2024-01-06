@@ -16,8 +16,8 @@ public class ActiTimeValidLogin extends pageObjectModel.BaseTest {
 		
 		// Read data from Property file
 		FLib flib = new FLib();
-		LoginPage lb = new LoginPage(driver);
-		//lp.validLogin(flib.readDataFromProperty(PROP_FILE, "Username"), flib.readDataFromProperty(PROP_FILE, "Password"));
+		LoginPage lp = new LoginPage(driver);
+		lp.validLogin(flib.readDataFromProperty(PROP_PATH, "Username"), flib.readDataFromProperty(PROP_PATH, "Password"));
 
 	}
 

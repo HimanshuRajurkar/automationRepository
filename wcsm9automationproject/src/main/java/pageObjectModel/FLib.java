@@ -18,10 +18,19 @@ public class FLib {
 	{
 		FileInputStream fis=new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sheet=wb.getSheet(sheetName);
+		Sheet sheet = wb.getSheet(sheetName);
 		Row row = sheet.getRow(rowCount);
 		Cell cell = row.getCell(cellCount);
-		String data = cell.getStringCellValue();
+		//String data = cell.getStringCellValue();
+		String data=null;
+		if(cell.getCellType()==cell.getCellType().STRING)
+		{
+			data=cell.getStringCellValue();
+		}
+		else if(cell.getCellType()==cell.getCellType().NUMERIC)
+		{
+			data=cell.getStringCellValue().valueOf(cell.getNumericCellValue());
+		}
 		return data;
 	}
 	
@@ -29,7 +38,7 @@ public class FLib {
 	{
 		FileInputStream fis= new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sheet=wb.getSheet(sheetName);
+		Sheet sheet = wb.getSheet(sheetName);
 		Row row = sheet.createRow(rowCount);
 		Cell cell = row.createCell(cellCount);
 		cell.setCellValue(data);

@@ -32,6 +32,7 @@ public class RightClickAction {
 	    		{
 	    			System.out.println("notDisplayed");
 	    		}
+	    		driver.quit();
 	}
 
 }

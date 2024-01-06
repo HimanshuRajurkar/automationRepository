@@ -30,8 +30,7 @@ public class WithoutActionClass {
 		} 
 	            else {
 			    System.out.println("Is Not Displayed");
-	         }
-	      
+	         }   
 	      
 	}
 

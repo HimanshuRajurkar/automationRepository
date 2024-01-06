@@ -28,7 +28,7 @@ public class TakeScreenshotWay5 {
         File src = ts.getScreenshotAs(OutputType.FILE);
         
         //define way of storing screenshot
-        File dest = new File("./Screenshot/seleniumss5.png");
+        File dest = new File("./Screenshot/seleniumss6.png");
         
         //store the screenshot into the dest
         Files.copy(src, dest);

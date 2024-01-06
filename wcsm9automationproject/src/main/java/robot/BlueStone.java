@@ -32,7 +32,7 @@ public class BlueStone {
          for(int i=0;i<2;i++) {
         	 act.doubleClick(element2);
         	 Thread.sleep(2000);
-            act.clickAndHold(element2).perform();
+            //act.clickAndHold(element2).perform();
          }
          robot.keyPress(KeyEvent.VK_CONTROL);
          robot.keyPress(KeyEvent.VK_C);
